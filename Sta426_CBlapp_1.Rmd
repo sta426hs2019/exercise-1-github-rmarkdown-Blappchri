@@ -1,0 +1,27 @@
+---
+title: "Homework426_1"
+output: html_document
+---
+
+#Week 1
+##Part B
+### Second Task
+```{r}
+sample1<-rlnorm(100,1,0.25)
+hist(sample1,main = "Regular data")
+```
+Doesnt look normally distributed
+```{r}
+hist(log(sample1),main = "Logarithmized data")
+```
+
+Looks pretty normal!
+```{r}
+mean(sample1)
+```
+The mean is roughly 2.8. That is close to exp(1).
+```{r}
+var(sample1)
+sd(log(sample1))
+```
+The variance of the sample rounds to 0.63.
